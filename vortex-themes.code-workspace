@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "C:/Program Files/Black Tree Gaming Ltd/Vortex/resources/app.asar.unpacked/assets/css"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			".history": true,
+			"**/__pycache__": true,
+			"**/.DS_Store": true,
+			"**/.git": true,
+			"**/.hg": false,
+			"**/.pytest_cache": true,
+			"**/.svn": false,
+			"**/.vscode": true,
+			"**/CVS": false,
+			"**/node_modules": true,
+			"**/Thumbs.db": true,
+			"env*": true,
+			"screenshots": true,
+			"venv": true,
+		},
+		"explorerExclude.backup": {}
+	}
+}
