@@ -1,4 +1,6 @@
-// Automatically generated. Changes to this file will be overwritten.
+// ------------------------------------------------------------------------------
+// WARNING: DO NOT EDIT THEME SETTINGS IN VORTEX OR THIS FILE WILL BE OVERWRITTEN
+// ------------------------------------------------------------------------------
 $brand-primary: #43226e;
 $brand-highlight: #d78f46;
 $brand-success: #1b6e3c;
@@ -25,3 +27,6 @@ $gray-light: #4C4C4C;
 $gray: #2A2C2B;
 $gray-dark: #4C4C4C;
 $gray-darker: #000000;
+
+// Make list items match the main color on hover
+$component-active-bg: $brand-primary;
