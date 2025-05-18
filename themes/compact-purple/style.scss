@@ -1,4 +1,4 @@
-// reduce paddings
+// Reduce padding
 .nav-tabs > li > a {
     padding: 2px 16px;
 }
@@ -7,8 +7,7 @@
     padding: 0.4rem 0.6rem;
 }
 
-// if the sidebar is collapsed, show the tab name when hovering
-// (this conflicts a bit with the tooltip which we can't disable from css)
+// If the sidebar is collapsed, show the tab name when hovering
 #main-nav-sidebar.sidebar-compact #main-nav-container {
     overflow: visible;
     z-index: 3;
@@ -32,8 +31,7 @@
     align-items: center;
 }
 
-// category names can be very long and force a line break.
-// instead, limit the width and display ellipsis as necessary
+// Limit width of category names and use an ellipsis if necessary
 .xtd.table-mods.cell-category {
     white-space: nowrap;
     max-width: 20em;
@@ -85,4 +83,42 @@
 
 #titlebar-starter {
   grid-template-rows: repeat(1, auto);
+}
+
+// Make the footer match the header
+.table-footer, .menubar, .menubar > .iconbar-actiongroup {
+  background-color: $brand-primary;
+}
+
+// Hide the "Get more mods" banner
+#more-mods-container {
+  display: none;
+}
+
+// Make load order entries more compact
+#collections-load-order-list,
+#page-file-based-loadorder,
+#page-generic-loadorder {
+  .load-order-entry {
+    padding: 0px 12px !important;
+    min-height: 0px !important;
+    height: auto !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    line-height: 0 !important;
+  }
+
+  // Reduce spacing between entries
+  .file-based-load-order-list .list-group {
+    gap: 0px !important;
+    padding: 0 !important;
+  }
+}
+
+// Make the scrollbar more visible
+::-webkit-scrollbar-thumb {
+  background: $gray;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $gray-light;
 }
